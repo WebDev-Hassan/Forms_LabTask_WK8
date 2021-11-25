@@ -12,20 +12,21 @@ namespace SirUmarLabTaskWk8
 {
     public partial class Form1 : Form
     {
-        string PicPath = "";
-        string AppliedFor = "";
-        string Name = "";
-        string Fname = "";
-        string Address = "";
-        string Gender = "";
+        string PicPath = String.Empty;
+        string AppliedFor = String.Empty;
+        string Name = String.Empty;
+        string Fname = String.Empty;
+        string Address = String.Empty;
+        string Gender = String.Empty;
         int Age;
-        string Nationality = "Pakistani";
-        string Eligibility = "";
+        string Nationality = String.Empty;
+        string Eligibility = String.Empty;
 
         public Form1()
         {
             InitializeComponent();
             AddBoard();
+            chk_pakistani.Checked = true;
         }
 
         private string getGender()
@@ -57,6 +58,17 @@ namespace SirUmarLabTaskWk8
         private void ShowDetails()
         {
             dgv_details.Rows.Add(this.Name, this.Fname, this.PicPath, this.Age, this.Nationality, this.Eligibility);
+            ClearDetails();
+        }
+        private void ClearDetails()
+        {
+            this.Name = String.Empty;
+            this.Fname = String.Empty;
+            this.Address = String.Empty;
+            this.Gender = String.Empty;
+            this.Age = 0;
+            this.Nationality = String.Empty;
+            this.Eligibility = String.Empty;
         }
         private void AddBoard()
         {
@@ -94,19 +106,30 @@ namespace SirUmarLabTaskWk8
         {
             string Degree = cb_degree.Text;
             string Board = cb_board.Text;
-            List<string> courseList =  new List<string>();
+            string CourseList = "";
             
             foreach(string c in lb_courses.Items)
             {
-                courseList.Add(c);
+                CourseList += c + " ";
             }
 
             int total = int.Parse(txt_total.Text);
             int obtained = int.Parse(txt_obtained.Text);
             int percentage = (int.Parse(txt_obtained.Text) * 100) / int.Parse(txt_total.Text);
 
-            dgv.Rows.Add(Degree, Board, courseList, total, obtained, percentage);
+            dgv.Rows.Add(Degree, Board, CourseList, total, obtained, percentage);
 
+
+        }
+
+        private void lb_courses_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int ind = lb_courses.SelectedIndex;
+            lb_courses.Items.RemoveAt(ind);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
