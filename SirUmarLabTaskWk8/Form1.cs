@@ -127,10 +127,5 @@ namespace SirUmarLabTaskWk8
             int ind = lb_courses.SelectedIndex;
             lb_courses.Items.RemoveAt(ind);
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

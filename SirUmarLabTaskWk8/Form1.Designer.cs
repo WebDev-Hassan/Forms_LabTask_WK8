@@ -29,7 +29,7 @@ namespace SirUmarLabTaskWk8
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtp_dob = new System.Windows.Forms.DateTimePicker();
             this.picbox = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -94,11 +94,12 @@ namespace SirUmarLabTaskWk8
             // 
             // picbox
             // 
-            this.picbox.BackColor = System.Drawing.Color.Silver;
+            this.picbox.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.picbox.Enabled = false;
             this.picbox.Location = new System.Drawing.Point(12, 12);
             this.picbox.Name = "picbox";
             this.picbox.Size = new System.Drawing.Size(100, 88);
-            this.picbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox.TabIndex = 1;
             this.picbox.TabStop = false;
             // 
@@ -485,11 +486,11 @@ namespace SirUmarLabTaskWk8
             // 
             // dgv_delete
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
-            this.dgv_delete.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.dgv_delete.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_delete.HeaderText = "Delete";
             this.dgv_delete.Name = "dgv_delete";
             this.dgv_delete.Text = "Delete";
@@ -529,7 +530,6 @@ namespace SirUmarLabTaskWk8
             this.Controls.Add(this.dtp_dob);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
