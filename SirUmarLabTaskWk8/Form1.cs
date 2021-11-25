@@ -66,30 +66,6 @@ namespace SirUmarLabTaskWk8
                 cb_board.Items.Add(b);
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btn_upload_Click(object sender, EventArgs e)
         {

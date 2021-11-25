@@ -198,7 +198,6 @@ namespace SirUmarLabTaskWk8
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gender";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // rb_f
             // 
@@ -329,7 +328,6 @@ namespace SirUmarLabTaskWk8
             this.label9.Size = new System.Drawing.Size(63, 16);
             this.label9.TabIndex = 19;
             this.label9.Text = "Obtained";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txt_obtained
             // 
@@ -445,7 +443,6 @@ namespace SirUmarLabTaskWk8
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgv_details
             // 
